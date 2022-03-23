@@ -1,0 +1,188 @@
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
+}
+
+.active {
+  border-bottom: 2px solid #0a1a18;
+}
+
+.account-line {
+  top: 235px;
+  left: 147px;
+  width: 1145px;
+  height: 17px;
+}
+
+.account {
+  text-align: left;
+  font: normal normal normal 12px/17px Le Monde Sans Std;
+  letter-spacing: 1.2px;
+  color: #747474;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.name-line {
+  top: 272px;
+  left: 147px;
+  width: 1145px;
+  height: 32px;
+  margin-bottom: 43px;
+  margin-top: 20px;
+}
+
+.name {
+  text-align: left;
+  font: normal normal normal 31px/44px Utopia Std;
+  letter-spacing: 0px;
+  color: #2c3623;
+  opacity: 1;
+}
+
+.tablinks {
+  text-align: left;
+  font: normal normal normal 12px/17px Le Monde Sans Std;
+  letter-spacing: 1.2px;
+  color: #0a1a18;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-right: 50px;
+  padding-bottom: 20px;
+}
+
+.tabcontent {
+  margin-top: 100px;
+}
+
+#orders {
+  top: 464px;
+  left: 147px;
+  width: 642px;
+  height: 173px;
+}
+
+.order-top-span {
+  text-align: left;
+  font: normal normal normal 12px/17px Le Monde Sans Std;
+  letter-spacing: 1.2px;
+  color: #0a1a18;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+
+.order-bottom {
+  padding-top: 55px;
+  padding-bottom: 54px;
+  margin-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 10%);
+  border-bottom: 1px solid rgba(0, 0, 0, 10%);
+}
+
+.order-bottom-span {
+  text-align: left;
+  font: normal normal normal 14px/30px Le Monde Sans Std;
+  letter-spacing: 0px;
+  color: #747474;
+  opacity: 1;
+}
+
+.order-number {
+  top: 567px;
+  left: 147px;
+  width: 228px;
+  height: 16px;
+  display: inline;
+  text-align: left;
+  font: normal normal normal 16px/22px Utopia Std;
+  letter-spacing: 0px;
+  color: #2c3623;
+  text-transform: capitalize;
+  opacity: 1;
+  margin-right: 150px;
+}
+
+.pale {
+  text-align: left;
+  font: normal normal normal 14px/30px Le Monde Sans Std;
+  letter-spacing: 0px;
+  color: #747474;
+  opacity: 1;
+}
+
+#addresses {
+  border-top: 1px solid rgba(0, 0, 0, 10%);
+  border-bottom: 1px solid rgba(0, 0, 0, 10%);
+}
+
+.addresses-top {
+  text-align: left;
+  font: normal normal normal 24px/30px Utopia Std;
+  letter-spacing: 0px;
+  color: #0a1a18;
+  opacity: 1;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.addresses-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.address-middle-span {
+  text-align: left;
+  font: normal normal normal 16px/30px Le Monde Sans Std;
+  letter-spacing: 0px;
+  color: #747474;
+  opacity: 1;
+}
+
+.addresses-bottom {
+  margin-bottom: 50px;
+}
+
+.addresses-bottom-span {
+  text-align: left;
+  text-decoration: underline;
+  font: normal normal normal 16px/30px Le Monde Sans Std;
+  letter-spacing: 0px;
+  color: #0a1a18;
+  opacity: 1;
+}
+
+.new-address {
+  top: 842px;
+  left: 147px;
+  width: 360px;
+  height: 44px;
+  border: 1px solid #0a1a18;
+  opacity: 1;
+}
+
+.new-address-span {
+  top: 854px;
+  left: 162px;
+  width: 330px;
+  height: 17px;
+  text-align: center;
+  font: normal normal normal 12px/17px Le Monde Sans Std;
+  letter-spacing: 0px;
+  color: #0a1a18;
+  text-transform: uppercase;
+  opacity: 1;
+  padding-top: 12px;
+  padding-bottom: 15px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function openPage(evt, page) {
+        let i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(page).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+    <div class="content">
+      <div class="top">
+        <div class="account-line">
+          <span class="account">YOUR ACCOUNT</span>
+        </div>
+        <div class="name-line">
+          <span class="name">Welcome Jane!</span>
+        </div>
+        <div class="tab">
+          <a
+            class="tablinks"
+            id="defaultOpen"
+            onclick="openPage(event, 'orders')"
+          >
+            ORDERS
+          </a>
+          <a class="tablinks" onclick="openPage(event, 'addresses')">
+            ADDRESSES
+          </a>
+          <a class="tablinks" onclick="openPage(event, 'change_password')">
+            CHANGE PASSWORD
+          </a>
+          <a class="tablinks" onclick="openPage(event, 'logout')"> LOGOUT </a>
+        </div>
+      </div>
+      <div id="orders" class="tabcontent">
+        <div class="order-top">
+          <span class="order-top-span" style="margin-right: 201px">order</span>
+          <span class="order-top-span" style="margin-right: 153px"
+            >total price</span
+          >
+          <span class="order-top-span">delivery date</span>
+        </div>
+        <div class="order-bottom">
+          <div class="order-number"><span>order #3244</span></div>
+          <span
+            class="order-bottom-span"
+            class="pale"
+            style="margin-right: 175px; margin-left: 40px"
+            >£55.00</span
+          >
+          <span class="order-bottom-span" class="pale">18th March, 2022</span>
+        </div>
+      </div>
+      <div id="addresses" class="tabcontent">
+        <div class="addresses-top">Default Address</div>
+        <div class="addresses-middle">
+          <span class="address-middle-span">Jane Doe</span>
+          <span class="address-middle-span">The Doe LTD</span>
+          <span class="address-middle-span">London</span>
+          <span class="address-middle-span">United Kingdom</span>
+        </div>
+        <div class="addresses-bottom">
+          <span class="addresses-bottom-span" style="margin-right: 30px"
+            >Edit</span
+          >
+          <span class="addresses-bottom-span">Delete</span>
+        </div>
+        <div class="new-address">
+          <div class="new-address-span">
+            <span>ADD NEW ADDRESS</span>
+          </div>
+        </div>
+      </div>
+      <div id="change_password" class="tabcontent"></div>
+      <div id="logout" class="tabcontent"></div>
+    </div>
+  </body>
+</html>
